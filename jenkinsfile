@@ -2,28 +2,23 @@ pipeline {
     agent any
 
     stages {
-        stage('Clone Repository') {
+        stage('build') {
             steps {
-                git 'https://github.com/shalini734/pipeline.git'
+                echo 'building an application'
             }
         }
-        stage('Build') {
+         stage('test') {
             steps {
-                echo 'Building...'
-                // Add your build steps here
-            }
-        }
-        stage('Test') {
+                echo 'testing an application'
+    }
+}
+        stage('build') {
             steps {
-                echo 'Testing...'
-                // Add your test steps here
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying...'
-                // Add your deploy steps here
+                echo 'deploying an application'
             }
         }
     }
-}
+}             
+
+
+
