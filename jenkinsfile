@@ -19,7 +19,7 @@ pipeline {
         }    
         stage('finish') {
             steps {
-                echo 'finish an application'    
+                echo 'finish an application soon'    
             }
         }
     }  
